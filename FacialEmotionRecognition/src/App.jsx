@@ -2,6 +2,7 @@ import * as faceapi from 'face-api.js';
 import React from 'react';
 import { ResponsiveStream } from '@nivo/stream';
 import { ResponsiveBar } from '@nivo/bar';
+import './App.css'
 
 function App() {
   const [modelsLoaded, setModelsLoaded] = React.useState(false);
@@ -97,7 +98,7 @@ function App() {
 
   return (
     <>
-    <div>
+    <div className=' bg-gray-300 flex flex-cols'>
     <div style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}>
   <video
     ref={videoRef}
